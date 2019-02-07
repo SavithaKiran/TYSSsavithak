@@ -13,7 +13,7 @@ public class Arraydup {
 		{
 			if(!unique.add(dups)) 
 			{
-				System.out.println(dups);
+				System.out.println(dups);//dgrsgrs
 			}
 		}
 }
