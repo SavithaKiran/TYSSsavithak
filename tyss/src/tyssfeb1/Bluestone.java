@@ -58,7 +58,7 @@ public class Bluestone {
 		List<WebElement> sortpr = driver.findElements(By.xpath("//a[@class='link-overlay']/following-sibling::span/span/span[@class='new-price']"));
 		Thread.sleep(9000);
 		int sortsiz = sortpr.size();
-		System.out.println(sortsiz);//jhfhasbcg
+		System.out.println(sortsiz);
 		for(int i=0;i<sortsiz;i++)
 		{
 				String sorttext = sortpr.get(i).getText();
