@@ -8,7 +8,7 @@ public class Arraydup {
 		// TODO Auto-generated method stub
 		String[] arr= {"I","am","what","I","am"};//demo testing
 		TreeSet<String> unique = new TreeSet<>();
-		System.out.println("Duplicate Strings are ");
+		System.out.println("Duplicate Strings are ");//dssrdtdhtfhgd
 		for(String dups:arr) 
 		{
 			if(!unique.add(dups)) 
