@@ -53,22 +53,20 @@ public class Makemytrip {
 		{
 			Thread.sleep(4000);
 			driver.findElement(By.xpath("//div[@class='dateFilter hasDatepicker']/div/div[@class='ui-datepicker-group ui-datepicker-group-last']/table/tbody/tr/td[@data-handler = 'selectDay']/a[text()='"+addt+"']")).click();
-			Thread.sleep(5000);
+			
 		}
 		else
 		{
-			Thread.sleep(5000);
+
 			driver.findElement(By.xpath("//div[@class='dateFilter hasDatepicker']/div/div[@class='ui-datepicker-group ui-datepicker-group-last']/div/a[@class='ui-datepicker-next ui-corner-all']/span")).click();
 		}
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div[@class='inputM inputHlp disable inputDateFilter']")).click();
-		Thread.sleep(5000);
 		LocalDate ret = adddate.plusDays(30);
 		int retdat = ret.getDayOfMonth();
 		driver.findElement(By.xpath("//div[@class='dateFilterReturn hasDatepicker']/descendant::a[text()='"+retdat+"']")).click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		driver.findElement(By.id("searchBtn")).click();
-		Thread.sleep(15000);
 		driver.close();
 		
 	}
